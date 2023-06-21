@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Quicksand", sans-serif; 
+}
+body{
+    line-height: 1.8;
+
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px 4px 80px 40px;
+    color: darkorchid;
+
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input{
+    width: 60%;
+    max-width: 400%;
+    padding: 20px 40px;
+    border-color: aqua;
+    border-width: medium;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.2) ;
+    border-radius: 10px;
+    font-size: 20px;
+    color: brown;
+}
+
+#search{
+    padding: 20px 40px;
+    background-color: rgba(136, 221, 50, 0.83);
+    color: aliceblue;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+
+.sr{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.s{
+    margin-bottom: 60px;
+    width:30%;
+    height:100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+
+
+
+}
+.s img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.s:hover img{
+    opacity:0.8;
+}
+
+.s a{
+    font-size: 20px;
+    text-decoration: wavy;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+
+}
+#sho{
+    background-color: blue;
+    font-size: 25px;
+    border-color: lightcoral;
+    color:white;
+    padding: 20px 40px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+
+}
+@media screen and (max-width:768px){
+    .sr{
+        padding:20px;
+    }
+    .s{
+        width:45%;
+    }
+    
+}
+@media screen and (max-width:480px){
+    .sr{
+        padding:10px;
+    }
+    .s{
+        width:100%;
+    }
+    
+}
